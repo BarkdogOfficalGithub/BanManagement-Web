@@ -6,5 +6,5 @@
         $_SESSION["username"] = $_POST["username"];
     }
 
-    header("Location: index.php");
+    header("Location: " . $_SERVER['HTTP_REFERER']);
 ?>
